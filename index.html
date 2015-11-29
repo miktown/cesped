@@ -272,8 +272,99 @@
 
 
 
+<!-- main section -->
+<section class="row main-content-wrap">
 
-<div style="height:700px;"></div>
+
+
+	<!-- main aside -->
+	<div class="col-md-3 main-aside">
+
+		<!-- banner solicitar instalación -->
+		<div class="col-md-12 main-aside-instalacion">
+			<h2 class="h2instalacion">¿NECESITA INSTALACIÓN?</h2>
+			<div class="form-group">
+
+			<div class="slider-wrap-m2">
+				<span class="area">Área</span>
+				<!-- <div class="wrap-slider-in"> -->
+					<input type="text" class="span2 sliderInstalacion" value="" data-slider-min="0" data-slider-max="500" data-slider-step="5" data-slider-value="0" data-slider-orientation="horizontal" data-slider-selection="after" data-slider-tooltip="show" selection="before">
+				<!-- </div> -->
+				<span class="area"><span id="sliderDataInput">0</span> m<sup>2</sup></span>
+			</div>
+
+
+			    <input type="text" class="form-control input-instalacion" id="nombreInstalacion" placeholder="Nombre" required>
+			    <input type="email" class="form-control input-instalacion" id="emailInstalacion" placeholder="Email" required>
+			    <input type="tel" class="form-control input-instalacion" id="telInstalacion" placeholder="Teléfono" required>
+			    <input type="number" class="form-control input-instalacion" id="zipInstalacion" placeholder="Código Postal" required>
+			    <textarea class="form-control input-instalacion" rows="3">Observaciones</textarea>
+				<div class="checkbox text-center">
+				    <label class="checkinstalacion">
+				      <input type="checkbox"> He leído y acepto <a class="condiciones" href="">condiciones</a>
+				    </label>
+				</div>
+				<button type="submit" class="botonEnviar text-center btn btn-default">SOLICITAR PRESUPUESTO</button>
+			</div>
+
+
+
+		</div><!-- /Bbanner solicitar instalación -->
+
+
+		<!-- banner cateogrias -->
+		<div class="col-md-12 main-aside-cats">
+			<h2 class="h2cats">DISPONEMOS DE CÉSPED ARTIFICIAL PARA</h2>
+			<ul class="ulcats">
+				<li class="licats">
+					<a class="glyph-icon flaticon-cesped acats" href="#">Jardines</a>
+				</li>
+				<li class="licats">
+					<a class="glyph-icon flaticon-cesped acats" href="#">Piscinas</a>
+				</li>
+				<li class="licats">
+					<a class="glyph-icon flaticon-cesped acats" href="#">Terrazas y Áticos</a>
+				</li>
+				<li class="licats">
+					<a class="glyph-icon flaticon-cesped acats" href="#">Interior</a>
+				</li>
+				<li class="licats">
+					<a class="glyph-icon flaticon-cesped acats" href="#">Centros Infantiles</a>
+				</li>
+				<li class="licats">
+					<a class="glyph-icon flaticon-cesped acats" href="#">Accesorios para Instalación</a>
+				</li>
+			</ul>
+		</div><!-- /banner categorias -->
+
+		<!-- banner ceped 100% europeo -->
+		<div class="col-md-12 main-aside-tutos text-center">
+			<p class="ptutos">¿Quiere instalarlo usted mismo?</p>
+			<a class="atutos" href="#">VER VÍDEOS DE INSTALACIÓN</a>
+			<span class="glyph-icon flaticon-cesped"></span>
+		</div><!-- /banner ceped 100% europeo -->
+
+		<!-- banner ceped 100% europeo -->
+		<div class="col-md-12 main-aside-europeo">
+			<p class="peuro">césped artificial
+			<br><span class="span-europeo">100%</span> EUROPEO</p>
+		</div><!-- /banner ceped 100% europeo -->
+
+	</div><!-- / main aside -->
+
+	<!-- main content -->
+	<div class="col-md-9 main-content">
+		contentet derecha
+	</div><!-- / main content -->
+
+	<!-- main content extra -->
+	<div class="col-md-12 main-content-extra">
+		contentet bajo content
+	</div><!-- / main content extra -->
+
+
+
+</section><!-- /main section -->
 
 
 		<!-- aside -->
@@ -428,6 +519,7 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="js/form-slider.js"></script>
 	<script>
 
 
@@ -447,6 +539,15 @@
 
 		// colocar la flecha bajo el menu de tienda
 		$(function() {
+
+			var sliderInstalacion = $('.sliderInstalacion');
+			var sliderObj = sliderInstalacion.slider();
+			var wrapDataSlider = $("#sliderDataInput");
+			sliderObj.on('slide', function(ev){
+				wrapDataSlider.html(ev.value);
+			});
+
+
 			setTimeout(colocarFlecha,10);
 			$( window ).resize(colocarFlecha);
 

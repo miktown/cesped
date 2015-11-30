@@ -80,7 +80,7 @@
 			     <ul class="nav navbar-nav">
 			     	<!-- home icon -->
 			     	<li class="cesped-menu-item home-link">
-			         	<a class="glyph-icon flaticon-home" href="#"></a>
+			         	<a class="glyph-icon flaticon-home text-hide" href="#">home</a>
 			       	</li>
 			     	<!-- tienda -->
 			       <li class="dropdown yamm-fw cesped-menu-item">
@@ -418,6 +418,33 @@
 		<!-- home products -->
 		<div class="col-md-12 products-home">
 			<h1>This is Photoshop's version  of Lorem Ipsum.</h1>
+
+
+<div id="owl-demo" class="owl-carousel owl-theme">
+  <div class="item"><h1>1</h1></div>
+  <div class="item"><h1>2</h1></div>
+  <div class="item"><h1>3</h1></div>
+  <div class="item"><h1>4</h1></div>
+  <div class="item"><h1>5</h1></div>
+  <div class="item"><h1>6</h1></div>
+  <div class="item"><h1>7</h1></div>
+  <div class="item"><h1>8</h1></div>
+  <div class="item"><h1>9</h1></div>
+  <div class="item"><h1>10</h1></div>
+  <div class="item"><h1>11</h1></div>
+  <div class="item"><h1>12</h1></div>
+  <div class="item"><h1>13</h1></div>
+  <div class="item"><h1>14</h1></div>
+  <div class="item"><h1>15</h1></div>
+  <div class="item"><h1>16</h1></div>
+</div>
+
+<div class="customNavigation">
+  <a class="btn prev  text-hide glyph-icon flaticon-siguiente"></a>
+  <a class="btn next text-hide glyph-icon flaticon-siguiente"></a>
+</div>
+
+
 		</div><!-- / home products -->
 
 		<!-- home banners -->
@@ -596,6 +623,7 @@ products 2
     <!-- Latest compiled and minified JavaScript -->
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	<script src="js/form-slider.js"></script>
+	<script src="js/owl-carousel.js"></script>
 	<script>
 
 
@@ -611,6 +639,8 @@ products 2
 			    var desviacion = 22;
 			    var positionIconFlechaMenu = menuTienda.position().left + (menuTiendaWidth/2) - desviacion;
 			    iconFlechaMenu.css( 'margin-left', positionIconFlechaMenu+'px');
+
+			    //...
 			}
 
 		// colocar la flecha bajo el menu de tienda
@@ -619,6 +649,7 @@ products 2
 			var sliderInstalacion = $('.sliderInstalacion');
 			var sliderObj = sliderInstalacion.slider();
 			var wrapDataSlider = $("#sliderDataInput");
+
 			sliderObj.on('slide', function(ev){
 				wrapDataSlider.html(ev.value);
 			});
@@ -631,7 +662,40 @@ products 2
 			   e.preventDefault();
 			   e.stopPropagation();
 			});
+
+			var owl = $("#owl-demo");
+
+			  owl.owlCarousel({
+			  	  pagination: false,
+			      items : 3, //10 items above 1000px browser width
+			      itemsDesktop : [1200,3], //5 items between 1000px and 901px
+			      itemsDesktopSmall : [992,3], // betweem 900px and 601px
+			      itemsTablet: [768,2], //2 items between 600 and 0
+			      itemsMobile : false// itemsMobile disabled - inherit from itemsTablet option
+			  });
+
+			  // Custom Navigation Events
+			  $(".next").click(function(){
+			    owl.trigger('owl.next');
+			  })
+			  $(".prev").click(function(){
+			    owl.trigger('owl.prev');
+			  })
+			  $(".play").click(function(){
+			    owl.trigger('owl.play',5000); //owl.play event accept autoPlay speed as second parameter
+			  })
+			  $(".stop").click(function(){
+			    owl.trigger('owl.stop');
+			  })
+
+			  // 768 menos
+			  // 768 igual o mas
+			  //992 igual o mas
+			  //1200 igual o mas
+
+			// ...
 		});
+
 	</script>
   </body>
 </html>

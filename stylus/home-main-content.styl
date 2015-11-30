@@ -2,6 +2,30 @@
 
 .main-content-wrap
 	.main-content
+		.products-home
+			.customNavigation
+				.prev
+					float: left
+					margin-left: -2.2em
+				.next
+					float: right
+					margin-right: -.2em
+				position absolute
+				margin -5.5em 0 0
+				width 100%
+				.flaticon-siguiente:active,.flaticon-siguiente:focus
+					outline none
+					box-shadow none
+				.flaticon-siguiente
+					&:before
+						color grisClaro
+					&:first-child
+						transform rotate(180deg)
+				.flaticon-siguiente:hover:before
+					color grisClaroOscurecido
+
+
+
 		.products-home h1
 			font-size 1.8em
 			color grisOscuro

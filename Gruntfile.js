@@ -21,14 +21,14 @@ module.exports = function(grunt){
 
     open: { // abre url en el navegador especificado
         dev: {
-          path: 'http://robots.dev/',
+          path: 'http://cesped.dev/',
           app: 'Google Chrome',
           options: {
             livereload: true
           }
         },
         pro: {
-          path: 'http://pro-robots.rhcloud.com/',
+          path: 'http://miktown.github.io/cesped/',
           app: 'Google Chrome'
         },
 
@@ -47,11 +47,11 @@ module.exports = function(grunt){
 
     },
 
-    browserify: { // gestión de dependencias js
+    browserify: { // build
           'temp/js/app.min.js': ['src/js/main.js']
       },
 
-    cssmin: { // minificado de css
+    cssmin: { // min.css
       target: {
         files: [{
           expand: true,
@@ -63,7 +63,7 @@ module.exports = function(grunt){
       }
     },
 
-      uglify: { // minificador de js
+      uglify: { // min.js
         options: {
           mangle: false
         },
@@ -75,7 +75,7 @@ module.exports = function(grunt){
       },
 
 
-      stylus: { // compilación stylus
+      stylus: { // stylus
       compile: {
         files: {
           './css/style.css': ['./stylus/style.styl']
@@ -97,17 +97,16 @@ module.exports = function(grunt){
     clean: {
       dev: ["temp"],
       pro: ["app"]
-    }, // borra la carpeta build antes de montarla          // SEGURIDAD: nunca versionar este archivo o la seguridad se verá comprometida
+    }, // borra la carpeta build antes de montarla
 
   });
 
   // tareas principales
 
-  grunt.registerTask('default',[ 'clean' , 'stylus' , 'browserify' , 'copy:pro' , 'clean:dev' , 'watch:scripts']);
+  grunt.registerTask('default',[ 'stylus', 'cssmin','open:dev','watch']);
 
-  grunt.task.registerTask('build', [ 'clean:pro', 'stylus' , 'browserify' , 'uglify' , 'copy:pro', 'replace:pro' ]);
-
-  grunt.task.registerTask('deploy', [ 'clean:pro', 'stylus' , 'browserify' , 'uglify' , 'copy:pro' , 'replace:pro' , 'sftp' , 'open:pro' ]);
+  // grunt.task.registerTask('build', [ 'clean:pro', 'stylus' , 'browserify' , 'uglify' , 'copy:pro', 'replace:pro' ]);
+  // grunt.task.registerTask('deploy', [ 'clean:pro', 'stylus' , 'browserify' , 'uglify' , 'copy:pro' , 'replace:pro' , 'sftp' , 'open:pro' ]);
 
   // tareas standalone
   grunt.task.registerTask('css', ['stylus', 'cssmin','watch']);

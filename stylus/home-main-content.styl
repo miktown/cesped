@@ -1,71 +1,117 @@
 // estilos generales
 
 .main-content-wrap
-	.main-content
-		.products-home
-			.customNavigation
-				.prev
-					float: left
-					margin-left: -2.2em
-				.next
-					float: right
-					margin-right: -.2em
-				position absolute
-				margin -5.5em 0 0
-				width 100%
-				.flaticon-siguiente:active,.flaticon-siguiente:focus
-					outline none
-					box-shadow none
-				.flaticon-siguiente
-					&:before
-						color grisClaro
-					&:first-child
-						transform rotate(180deg)
-				.flaticon-siguiente:hover:before
-					color grisClaroOscurecido
-
-
-
-		.products-home h1
-			font-size 1.8em
+	.banners-home
+		.figurebanners,.figurebanners img
+			width 100%
+			overflow hidden
+		.h2banners
+			text-align center
+			font-size 1em
 			color grisOscuro
 			text-align center
-			font-weight 400
-		.slider-home
-			.pegar-abajo
-					bottom 0
-			.carousel-indicators li
-					background-color white
-			.carousel-indicators li.active
-				background-color verdecesped
-				border 2px solid verdecesped
-			.carousel-inner
-				box-shadow 0 1px 2px grisClaroOscurecido
-				.carousel-caption
-					padding-bottom 60px
-				.carousel-caption h2
-					font-weight 300
-					font-size 1.8em
-				.carousel-caption p
-					font-size .8em
-					font-weight 300
-				.carousel-caption .boton-slider
-					color white
-					background rgba(255, 255, 255, 0)
-					transition all .5s ease
-					border 2px solid white
-					display inline-block
-					padding .5em 1em
-					text-decoration none
-					cursor pointer
-					text-shadow none
-					font-weight 300
-					font-size .9em
-				.carousel-caption .boton-slider:hover
-					background rgba(255, 255, 255, 1)
+		.pbanners
+			text-align center
+			font-size .9em
+			color grisClaroOscurecido
+	.products-home
+		font-size .8em
+		.carousel-cesped-productos
+			.item figure
+				overflow hidden
+				width 100%
+			.item figure img
+				width 100%
+			.item
+				.nombre-producto
+					color grisOscuro
+					font-weight 500
+					padding .5em 0 .2em
+				.precio
+					font-size 1.3em
 					color verdecesped
-
+					font-weight 400
+					margin-bottom 0
+					padding-bottom 0
+					.precio-current
+						font-weight 700
+				.ivaincluido
+					margin-top 0
+					padding-top .3em
+					font-size .6em
+					color grisClaro
+				.descuento
+					text-align center
+					padding-top .5em
+					margin: 0 auto
+					width 80%
+					border-top 1px solid grisClaro
+					color grisClaroOscurecido
+					font-weight 300
+					.precio-descuento
+						font-weight 500
+						color grisOscuro
+		.customNavigation
+			.prev,.prev2,.prev3
+				float: left
+				margin-left: -2.2em
+			.next,.next2,.next3
+				float: right
+				margin-right: -.2em
+			position absolute
+			margin -10em 0 0
+			width 100%
+			.flaticon-siguiente:active,.flaticon-siguiente:focus
+				outline none
+				box-shadow none
+			.flaticon-siguiente
+				&:before
+					color grisClaro
+				&:first-child
+					transform rotate(180deg)
+			.flaticon-siguiente:hover:before
+				color grisClaroOscurecido
+	.products-home h1
+		font-size 1.8em
+		color grisOscuro
+		text-align center
+		font-weight 400
+	.slider-home
+		.pegar-abajo
+				bottom 0
+		.carousel-indicators li
+				background-color white
+		.carousel-indicators li.active
+			background-color verdecesped
+			border 2px solid verdecesped
+		.carousel-inner
+			box-shadow 0 1px 2px grisClaroOscurecido
+			.carousel-caption
+				padding-bottom 60px
+			.carousel-caption h2
+				font-weight 300
+				font-size 1.8em
+			.carousel-caption p
+				font-size .8em
+				font-weight 300
+			.carousel-caption .boton-slider
+				color white
+				background rgba(255, 255, 255, 0)
+				transition all .5s ease
+				border 2px solid white
+				display inline-block
+				padding .5em 1em
+				text-decoration none
+				cursor pointer
+				text-shadow none
+				font-weight 300
+				font-size .9em
+			.carousel-caption .boton-slider:hover
+				background rgba(255, 255, 255, 1)
+				color verdecesped
 	.main-content-extra
+		font-size .8em
+		margin-bottom 2em
 	.main-aside
 		.main-aside-instalacion
 			background grisClaroPlus
@@ -145,13 +191,11 @@
 					cursor pointer
 				.botonEnviar:hover
 					background black
-
-
 		.main-aside-cats
 			border 1px solid verdecesped
 			padding-top 3em
-			margin-top .5em
-			margin-bottom .5em
+			margin-top 1.5em
+			margin-bottom 2.5em
 			.h2cats
 				position absolute
 				width 100%
@@ -212,8 +256,8 @@
 				opacity .3
 				font-size 1.8em
 		.main-aside-europeo
-			margin-top .5em
-			margin-bottom .5em
+			margin-top 1.5em
+			margin-bottom 1.5em
 			padding 2em 0 2em 35%
 			background azulEuro url("../img/europe-logo.png") 20px center no-repeat
 			background-size 30%

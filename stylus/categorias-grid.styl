@@ -1,0 +1,117 @@
+// grid de categorías
+.banner-sub-menu
+	padding-top 1em
+	padding-bottom 2em
+	.h1
+		color grisClaroOscurecido
+		font-weight 400
+		font-size 1.8em
+	.filtros-tienda
+		margin-top 1em
+		select.selector-orden,
+		select.selector-orden:hover,
+		select.selector-orden:active,
+		select.selector-orden:focus
+			position relative
+			z-index 2
+			background rgba(235, 235, 235, 0.52)
+			color grisOscuro
+			margin 0
+			outline 0
+			box-shadow 0
+			border 0
+			border-radius 0
+			appearance none
+			padding-right 5em
+		.select-custom-controles
+			margin 0
+			margin-right 2em
+			padding 0
+			display inline-block
+			position relative
+			cursor pointer
+		.select-custom-controles::after
+			z-index 1
+			position absolute
+			font-family Flaticon
+			content "\e00b"
+			color grisOscuro
+			right 100%
+			top 0
+			transform rotate(180deg)
+			margin-right -16.75em
+			font-size .8em
+			padding 0.75em
+			background grisClaro
+		.flaticon-lista:before ,.flaticon-grid:before
+			margin-left 0
+			padding 0 .5em
+		.btn
+			transition all .5s ease
+			box-shadow none
+			outline 0
+			border none
+			background grisClaroPlus
+			color grisClaroOscurecido
+			margin-right 0
+			margin-left 0
+			border-radius 0
+			box-shadow 0 1px 3px transparent
+			height 2.4em
+		.closer
+			margin-right -0.25em
+		.btn.active
+			box-shadow 0 1px 3px white
+			background verdecesped
+			color white
+.categorias-grid
+	font-size .8em
+	margin-bottom 6em
+	.categoria-banner
+		width 100%
+		height 200px
+		overflow hidden
+		box-shadow 0 1px 2px grisOscuro
+		img
+			width 100%
+			height auto
+			overflow hidden
+
+	.item figure
+		overflow hidden
+		width 100%
+	.item figure img
+		width 100%
+	.item
+		.nombre-producto
+			color grisOscuro
+			font-weight 500
+			padding .5em 0 .2em
+		.precio
+			font-size 1.3em
+			color verdecesped
+			font-weight 400
+			margin-bottom 0
+			padding-bottom 0
+			.precio-current
+				font-weight 700
+		.ivaincluido
+			margin-top 0
+			padding-top .3em
+			font-size .6em
+			color grisClaro
+		.descuento
+			text-align center
+			padding-top .5em
+			margin: 0 auto
+			width 80%
+			border-top 1px solid grisClaro
+			color grisClaroOscurecido
+			font-weight 300
+			.precio-descuento
+				font-weight 500
+				color grisOscuro
+
+
+
+

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Todo Cesped Artificial</title>
+    <title>Categoría | Todo Cesped Artificial</title>
 
     <!-- fonts -->
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
@@ -19,7 +19,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body class="home">
+  <body class="categoria">
 
 
 
@@ -28,7 +28,7 @@
 	<!-- main container -->
 	<div id="main-container" class="container">
 
-<!-- - - - - - - - - - - - - -
+<!-- - - - - - - - - - - - -
 |
 | HEADER SECTION
 |
@@ -51,8 +51,8 @@
 
 					<div class="col-sm-12 buscar-en-todocesped"><!-- buscador -->
 						<div class="input-group">
-						  <span class="input-group-addon glyph-icon flaticon-buscar" id="buscador-todocesped" for="bucador-todocesped"></span>
-						  <input type="text" id="bucador-todocesped" class="form-control" placeholder="Buscar Productos, información, por colores, por alturas, instalaciones..." aria-describedby="buscador-todocesped">
+						  <span class="input-group-addon glyph-icon flaticon-buscar" id="buscador-todocesped"></span>
+						  <input type="text" class="form-control" placeholder="Buscar Productos, información, por colores, por alturas, instalaciones..." aria-describedby="basic-addon1">
 						</div>
 					</div> <!-- / buscador -->
 
@@ -84,11 +84,11 @@
 
 			     <ul class="nav navbar-nav">
 			     	<!-- home icon -->
-			     	<li class="cesped-menu-item home-link active">
+			     	<li class="cesped-menu-item home-link">
 			         	<a class="glyph-icon flaticon-home text-hide" href="./">home</a>
 			       	</li>
 			     	<!-- tienda -->
-			       <li class="dropdown yamm-fw cesped-menu-item">
+			       <li class="dropdown yamm-fw cesped-menu-item active">
 			         <a href="tienda.html" class="dropdown-toggle" data-toggle="dropdown">TIENDA</a>
 			         <ul class="dropdown-menu">
 			         <div class="glyph-icon flaticon-triangulo deco-triangulo"></div> <!-- deco flechita -->
@@ -282,156 +282,121 @@
 
 
 <!-- main section -->
-<section class="row main-content-wrap">
-
-
-
-	<!-- main aside -->
-	<div class="col-md-3 main-aside">
-
-		<!-- banner solicitar instalación -->
-		<div class="col-md-12 main-aside-instalacion necesita-instalacion">
-			<h2 class="h2instalacion">¿NECESITA INSTALACIÓN?</h2>
-			<div class="form-group">
-
-			<div class="slider-wrap-m2">
-				<div class="col-area-1">
-					<span class="area">Área</span>
-				</div>
-				<div class="wrap-slider-in col-area-2 clearfix">
-					<input type="text" class="span2 sliderInstalacion" value="" data-slider-min="0" data-slider-max="500" data-slider-step="5" data-slider-value="100" data-slider-orientation="horizontal" data-slider-selection="after" data-slider-tooltip="show" selection="before" />
-				</div>
-				<div class="col-area-3">
-					<span class="area">
-						<span id="sliderDataInput">100</span> m<sup>2</sup>
-					</span>
-				</div>
+<section class="main-content-wrap headercesped">
+	<!-- title and filters -->
+	<div class="row">
+		<div class="col-sm-12 banner-sub-menu">
+			<h1 class="h1 col-sm-6">Nombre de la Categoría</h1>
+			<div class="filtros-tienda col-sm-6 form-inline text-right">
+				<label class="select-custom-controles" for="form-desplegable-filtros">
+					<select id="form-desplegable-filtros" class="form-control selector-orden">
+					  <option>orden alfabético</option>
+					  <option>más populares</option>
+					  <option>más precio primero</option>
+					  <option>más baratos primero</option>
+					</select>
+				</label>
+				<button class="btn active btn-primary closer hvr-icon-float-away"></button>
+				<button class="btn btn-primary dso hvr-icon-float-away"></button>
 			</div>
-
-
-			    <input type="text" class="form-control input-instalacion" id="nombreInstalacion" placeholder="Nombre" required>
-			    <input type="email" class="form-control input-instalacion" id="emailInstalacion" placeholder="Email" required>
-			    <input type="tel" class="form-control input-instalacion" id="telInstalacion" placeholder="Teléfono" required>
-			    <input type="number" class="form-control input-instalacion" id="zipInstalacion" placeholder="Código Postal" required>
-			    <textarea class="form-control input-instalacion" rows="3">Observaciones</textarea>
-				<div class="checkbox text-center">
-				    <label class="checkinstalacion">
-				      <input type="checkbox"> He leído y acepto <a class="condiciones" href="">condiciones</a>
-				    </label>
-				</div>
-				<button type="submit" class="botonEnviar text-center btn btn-default hvr-bounce-in">SOLICITAR PRESUPUESTO</button>
-			</div>
-
-
-
-		</div><!-- /Bbanner solicitar instalación -->
-
-
-		<!-- banner cateogrias -->
-		<div class="col-md-12 main-aside-cats">
-			<h2 class="h2cats">DISPONEMOS DE CÉSPED ARTIFICIAL PARA</h2>
-			<ul class="ulcats">
-				<li class="licats">
-					<a class="glyph-icon flaticon-cesped acats" href="#">Jardines</a>
-				</li>
-				<li class="licats">
-					<a class="glyph-icon flaticon-cesped acats" href="#">Piscinas</a>
-				</li>
-				<li class="licats">
-					<a class="glyph-icon flaticon-cesped acats" href="#">Terrazas y Áticos</a>
-				</li>
-				<li class="licats">
-					<a class="glyph-icon flaticon-cesped acats" href="#">Interior</a>
-				</li>
-				<li class="licats">
-					<a class="glyph-icon flaticon-cesped acats" href="#">Centros Infantiles</a>
-				</li>
-				<li class="licats">
-					<a class="glyph-icon flaticon-cesped acats" href="#">Accesorios para Instalación</a>
-				</li>
-			</ul>
-		</div><!-- /banner categorias -->
-
-		<!-- banner ceped 100% europeo -->
-		<div class="col-md-12 main-aside-tutos text-center">
-			<p class="ptutos">¿Quiere instalarlo usted mismo?</p>
-			<a class="atutos" href="#">VER VÍDEOS DE INSTALACIÓN</a>
-			<span class="glyph-icon flaticon-cesped"></span>
-		</div><!-- /banner ceped 100% europeo -->
-
-		<!-- banner ceped 100% europeo -->
-		<div class="col-md-12 main-aside-europeo">
-			<p class="peuro">césped artificial
-			<br><span class="span-europeo">100%</span> EUROPEO</p>
-		</div><!-- /banner ceped 100% europeo -->
-
-	</div><!-- / main aside -->
-
+		</div>
+	</div>
 	<!-- main content -->
-	<div class="col-md-9 main-content">
+	<div class="row categorias-grid text-center">
+
+		<div class="col-sm-3">
+		<!-- producto -->
+		  <div class="item hvr-grow" itemscope itemtype="http://schema.org/Product">
+		  	<figure>
+		  		<img itemprop="image" src="img/cesped-producto2.png" alt="cesped producto"/>
+		  	</figure>
+			<p class="nombre-producto" itemprop="name">LivingGrass Prado</p>
+			<div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+				<p class="precio">
+					<span class="precio-current" itemprop="highPrice" content="1000.00">12,30</span>
+					<span itemprop="priceCurrency" content="EUR">€/m<sup>2</sup></span>
+				</p>
+				<p class="ivaincluido">IVA INCLUIDO</p>
+				<p class="descuento">
+					Consíguelo a <span class="precio-descuento" itemprop="lowPrice">11,50 </span>
+					<span itemprop="priceCurrency" content="EUR">€/m<sup>2</sup></span>
+				</p>
+			 </div>
+		  </div>
+		<!-- / producto -->
+		</div>
+		<div class="col-sm-3">
+		<!-- producto -->
+		  <div class="item hvr-grow" itemscope itemtype="http://schema.org/Product">
+		  	<figure>
+		  		<img itemprop="image" src="img/cesped-producto2.png" alt="cesped producto"/>
+		  	</figure>
+			<p class="nombre-producto" itemprop="name">LivingGrass Prado</p>
+			<div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+				<p class="precio">
+					<span class="precio-current" itemprop="highPrice" content="1000.00">12,30</span>
+					<span itemprop="priceCurrency" content="EUR">€/m<sup>2</sup></span>
+				</p>
+				<p class="ivaincluido">IVA INCLUIDO</p>
+				<p class="descuento">
+					Consíguelo a <span class="precio-descuento" itemprop="lowPrice">11,50 </span>
+					<span itemprop="priceCurrency" content="EUR">€/m<sup>2</sup></span>
+				</p>
+			 </div>
+		  </div>
+		<!-- / producto -->
+		</div>
+		<div class="col-sm-3">
+		<!-- producto -->
+		  <div class="item hvr-grow" itemscope itemtype="http://schema.org/Product">
+		  	<figure>
+		  		<img itemprop="image" src="img/cesped-producto2.png" alt="cesped producto"/>
+		  	</figure>
+			<p class="nombre-producto" itemprop="name">LivingGrass Prado</p>
+			<div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+				<p class="precio">
+					<span class="precio-current" itemprop="highPrice" content="1000.00">12,30</span>
+					<span itemprop="priceCurrency" content="EUR">€/m<sup>2</sup></span>
+				</p>
+				<p class="ivaincluido">IVA INCLUIDO</p>
+				<p class="descuento">
+					Consíguelo a <span class="precio-descuento" itemprop="lowPrice">11,50 </span>
+					<span itemprop="priceCurrency" content="EUR">€/m<sup>2</sup></span>
+				</p>
+			 </div>
+		  </div>
+		<!-- / producto -->
+		</div>
 
 
-		<!-- home slider -->
-		<div class="col-md-12 slider-home">
+		<div class="col-sm-3">
+		<!-- producto -->
+		  <div class="item hvr-grow" itemscope itemtype="http://schema.org/Product">
+		  	<figure>
+		  		<img itemprop="image" src="img/cesped-producto2.png" alt="cesped producto"/>
+		  	</figure>
+			<p class="nombre-producto" itemprop="name">LivingGrass Prado</p>
+			<div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+				<p class="precio">
+					<span class="precio-current" itemprop="highPrice" content="1000.00">12,30</span>
+					<span itemprop="priceCurrency" content="EUR">€/m<sup>2</sup></span>
+				</p>
+				<p class="ivaincluido">IVA INCLUIDO</p>
+				<p class="descuento">
+					Consíguelo a <span class="precio-descuento" itemprop="lowPrice">11,50 </span>
+					<span itemprop="priceCurrency" content="EUR">€/m<sup>2</sup></span>
+				</p>
+			 </div>
+		  </div>
+		<!-- / producto -->
+		</div>
 
-
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators pegar-abajo">
-    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-  </ol>
-
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
-      <img src="img/slide1.png" alt="slide 1">
-      <div class="carousel-caption">
-        <h2>Especialistas en Césped Artificial</h2>
-        <p>jardines, piscinas, áticos, interiores, oficinas, centros infantiles, accesorios y más</p>
-        <a href="tienda.html" class="boton-slider hvr-bounce-to-right">VER TIENDA</a>
-      </div>
-    </div>
-    <div class="item">
-      <img src="img/slide2.png" alt="slide 2">
-      <div class="carousel-caption">
-        <h2>Photoshop's version  of Lorem Ipsum</h2>
-        <p>jardines, piscinas, áticos, interiores, oficinas, centros infantiles, accesorios y más</p>
-      </div>
-    </div>
-    <div class="item">
-      <img src="img/slide1.png" alt="slide 2">
-      <div class="carousel-caption">
-        <h2>Photoshop's version  of Lorem Ipsum</h2>
-        <p>jardines, piscinas, áticos, interiores, oficinas, centros infantiles, accesorios y más</p>
-      </div>
-    </div>
-
-  </div>
-
-  <!-- Controls -->
-  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Siguiente</span>
-  </a>
-  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Anterior</span>
-  </a>
+		<!-- segunda línea -->
+<div class="col-sm-12">
+	<div class="clear separator"></div>
 </div>
 
-
-		</div><!-- / home slider -->
-
-	<!-- home products -->
-	<div class="col-md-12 products-home">
-		<h1>This is Photoshop's version  of Lorem Ipsum.</h1>
-
-		<!-- owl -->
-		<div id="owl-demo" class="owl001 owl-carousel owl-theme carousel-cesped-productos">
-
-
+		<div class="col-sm-3">
 		<!-- producto -->
 		  <div class="item hvr-grow" itemscope itemtype="http://schema.org/Product">
 		  	<figure>
@@ -449,118 +414,10 @@
 					<span itemprop="priceCurrency" content="EUR">€/m<sup>2</sup></span>
 				</p>
 			 </div>
-		  </div><!-- / producto -->
-		  <!-- producto -->
-		  <div class="item hvr-grow" itemscope itemtype="http://schema.org/Product">
-		  	<figure>
-		  		<img itemprop="image" src="img/cesped-producto2.png" alt="cesped producto"/>
-		  	</figure>
-			<p class="nombre-producto" itemprop="name">LivingGrass Prado</p>
-			<div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-				<p class="precio">
-					<span class="precio-current" itemprop="highPrice" content="1000.00">12,30</span>
-					<span itemprop="priceCurrency" content="EUR">€/m<sup>2</sup></span>
-				</p>
-				<p class="ivaincluido">IVA INCLUIDO</p>
-			 </div>
-		  </div><!-- / producto -->
-		  <!-- producto -->
-		  <div class="item hvr-grow" itemscope itemtype="http://schema.org/Product">
-		  	<figure>
-		  		<img itemprop="image" src="img/cesped-producto2.png" alt="cesped producto"/>
-		  	</figure>
-			<p class="nombre-producto" itemprop="name">LivingGrass Prado</p>
-			<div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-				<p class="precio">
-					<span class="precio-current" itemprop="highPrice" content="1000.00">12,30</span>
-					<span itemprop="priceCurrency" content="EUR">€/m<sup>2</sup></span>
-				</p>
-				<p class="ivaincluido">IVA INCLUIDO</p>
-				<p class="descuento">
-					Consíguelo a <span class="precio-descuento" itemprop="lowPrice">11,50 </span>
-					<span itemprop="priceCurrency" content="EUR">€/m<sup>2</sup></span>
-				</p>
-			 </div>
-		  </div><!-- / producto -->
-		  <!-- producto -->
-		  <div class="item hvr-grow" itemscope itemtype="http://schema.org/Product">
-		  	<figure>
-		  		<img itemprop="image" src="img/cesped-producto2.png" alt="cesped producto"/>
-		  	</figure>
-			<p class="nombre-producto" itemprop="name">LivingGrass Prado</p>
-			<div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-				<p class="precio">
-					<span class="precio-current" itemprop="highPrice" content="1000.00">12,30</span>
-					<span itemprop="priceCurrency" content="EUR">€/m<sup>2</sup></span>
-				</p>
-				<p class="ivaincluido">IVA INCLUIDO</p>
-				<p class="descuento">
-					Consíguelo a <span class="precio-descuento" itemprop="lowPrice">11,50 </span>
-					<span itemprop="priceCurrency" content="EUR">€/m<sup>2</sup></span>
-				</p>
-			 </div>
-		  </div><!-- / producto -->
-		  <!-- producto -->
-		  <div class="item hvr-grow" itemscope itemtype="http://schema.org/Product">
-		  	<figure>
-		  		<img itemprop="image" src="img/cesped-producto2.png" alt="cesped producto"/>
-		  	</figure>
-			<p class="nombre-producto" itemprop="name">LivingGrass Prado</p>
-			<div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-				<p class="precio">
-					<span class="precio-current" itemprop="highPrice" content="1000.00">12,30</span>
-					<span itemprop="priceCurrency" content="EUR">€/m<sup>2</sup></span>
-				</p>
-				<p class="ivaincluido">IVA INCLUIDO</p>
-				<p class="descuento">
-					Consíguelo a <span class="precio-descuento" itemprop="lowPrice">11,50 </span>
-					<span itemprop="priceCurrency" content="EUR">€/m<sup>2</sup></span>
-				</p>
-			 </div>
-		  </div><!-- / producto -->
-
-
-		</div> <!-- / owl -->
-
-			<div class="customNavigation">
-			  <a class="btn prev  text-hide glyph-icon flaticon-siguiente"></a>
-			  <a class="btn next text-hide glyph-icon flaticon-siguiente"></a>
-			</div>
-
-
-		</div><!-- / home products -->
-
-		<!-- home banners -->
-		<div class="col-md-12 banners-home">
-				<div class="col-md-4 casoswrap">
-					<figure class="figurebanners">
-						<img src="img/banner1.png" alt="banner" />
-					</figure>
-						<h2 class="h2banners">CÉSPED DE COLORES</h2>
-						<p class="pbanners">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</p>
-				</div>
-				<div class="col-md-4 casoswrap">
-					<figure class="figurebanners">
-						<img src="img/banner2.png" alt="banner" />
-					</figure>
-						<h2 class="h2banners">CENTROS INFANTILES</h2>
-						<p class="pbanners">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</p>
-				</div>
-				<div class="col-md-4 casoswrap">
-					<figure class="figurebanners">
-						<img src="img/banner3.png" alt="banner" />
-					</figure>
-						<h2 class="h2banners">TERRAZAS Y ÁTICOS</h2>
-						<p class="pbanners">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</p>
-				</div>
-		</div><!-- / home banners -->
-
-		<!-- home products2 -->
-		<div class="col-md-12 products-home">
-		<!-- owl -->
-		<div id="owl-demo" class="owl002 owl-carousel owl-theme carousel-cesped-productos">
-
-
+		  </div>
+		<!-- / producto -->
+		</div>
+		<div class="col-sm-3">
 		<!-- producto -->
 		  <div class="item hvr-grow" itemscope itemtype="http://schema.org/Product">
 		  	<figure>
@@ -578,131 +435,20 @@
 					<span itemprop="priceCurrency" content="EUR">€/m<sup>2</sup></span>
 				</p>
 			 </div>
-		  </div><!-- / producto -->
-		  <!-- producto -->
-		  <div class="item hvr-grow" itemscope itemtype="http://schema.org/Product">
-		  	<figure>
-		  		<img itemprop="image" src="img/cesped-producto2.png" alt="cesped producto"/>
+		  </div>
+		<!-- / producto -->
+		</div>
+		<div class="col-sm-6">
+			<figure class="categoria-banner">
+		  		<img itemprop="image" src="img/banner-categoria.png" alt="imagen categoria"/>
 		  	</figure>
-			<p class="nombre-producto" itemprop="name">LivingGrass Prado</p>
-			<div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-				<p class="precio">
-					<span class="precio-current" itemprop="highPrice" content="1000.00">12,30</span>
-					<span itemprop="priceCurrency" content="EUR">€/m<sup>2</sup></span>
-				</p>
-				<p class="ivaincluido">IVA INCLUIDO</p>
-				<p class="descuento">
-					Consíguelo a <span class="precio-descuento" itemprop="lowPrice">11,50 </span>
-					<span itemprop="priceCurrency" content="EUR">€/m<sup>2</sup></span>
-				</p>
-			 </div>
-		  </div><!-- / producto -->
-		  <!-- producto -->
-		  <div class="item hvr-grow" itemscope itemtype="http://schema.org/Product">
-		  	<figure>
-		  		<img itemprop="image" src="img/cesped-producto2.png" alt="cesped producto"/>
-		  	</figure>
-			<p class="nombre-producto" itemprop="name">LivingGrass Prado</p>
-			<div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-				<p class="precio">
-					<span class="precio-current" itemprop="highPrice" content="1000.00">12,30</span>
-					<span itemprop="priceCurrency" content="EUR">€/m<sup>2</sup></span>
-				</p>
-				<p class="ivaincluido">IVA INCLUIDO</p>
-				<p class="descuento">
-					Consíguelo a <span class="precio-descuento" itemprop="lowPrice">11,50 </span>
-					<span itemprop="priceCurrency" content="EUR">€/m<sup>2</sup></span>
-				</p>
-			 </div>
-		  </div><!-- / producto -->
-		  <!-- producto -->
-		  <div class="item hvr-grow" itemscope itemtype="http://schema.org/Product">
-		  	<figure>
-		  		<img itemprop="image" src="img/cesped-producto2.png" alt="cesped producto"/>
-		  	</figure>
-			<p class="nombre-producto" itemprop="name">LivingGrass Prado</p>
-			<div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-				<p class="precio">
-					<span class="precio-current" itemprop="highPrice" content="1000.00">12,30</span>
-					<span itemprop="priceCurrency" content="EUR">€/m<sup>2</sup></span>
-				</p>
-				<p class="ivaincluido">IVA INCLUIDO</p>
+		</div>
 
-			 </div>
-		  </div><!-- / producto -->
-		  <!-- producto -->
-		  <div class="item hvr-grow" itemscope itemtype="http://schema.org/Product">
-		  	<figure>
-		  		<img itemprop="image" src="img/cesped-producto2.png" alt="cesped producto"/>
-		  	</figure>
-			<p class="nombre-producto" itemprop="name">LivingGrass Prado</p>
-			<div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-				<p class="precio">
-					<span class="precio-current" itemprop="highPrice" content="1000.00">12,30</span>
-					<span itemprop="priceCurrency" content="EUR">€/m<sup>2</sup></span>
-				</p>
-				<p class="ivaincluido">IVA INCLUIDO</p>
-				<p class="descuento">
-					Consíguelo a <span class="precio-descuento" itemprop="lowPrice">11,50 </span>
-					<span itemprop="priceCurrency" content="EUR">€/m<sup>2</sup></span>
-				</p>
-			 </div>
-		  </div><!-- / producto -->
-		  <!-- producto -->
-		  <div class="item hvr-grow" itemscope itemtype="http://schema.org/Product">
-		  	<figure>
-		  		<img itemprop="image" src="img/cesped-producto2.png" alt="cesped producto"/>
-		  	</figure>
-			<p class="nombre-producto" itemprop="name">LivingGrass Prado</p>
-			<div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-				<p class="precio">
-					<span class="precio-current" itemprop="highPrice" content="1000.00">12,30</span>
-					<span itemprop="priceCurrency" content="EUR">€/m<sup>2</sup></span>
-				</p>
-				<p class="ivaincluido">IVA INCLUIDO</p>
-				<p class="descuento">
-					Consíguelo a <span class="precio-descuento" itemprop="lowPrice">11,50 </span>
-					<span itemprop="priceCurrency" content="EUR">€/m<sup>2</sup></span>
-				</p>
-			 </div>
-		  </div><!-- / producto -->
-		  <!-- producto -->
-		  <div class="item hvr-grow" itemscope itemtype="http://schema.org/Product">
-		  	<figure>
-		  		<img itemprop="image" src="img/cesped-producto2.png" alt="cesped producto"/>
-		  	</figure>
-			<p class="nombre-producto" itemprop="name">LivingGrass Prado</p>
-			<div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-				<p class="precio">
-					<span class="precio-current" itemprop="highPrice" content="1000.00">12,30</span>
-					<span itemprop="priceCurrency" content="EUR">€/m<sup>2</sup></span>
-				</p>
-				<p class="ivaincluido">IVA INCLUIDO</p>
-				<p class="descuento">
-					Consíguelo a <span class="precio-descuento" itemprop="lowPrice">11,50 </span>
-					<span itemprop="priceCurrency" content="EUR">€/m<sup>2</sup></span>
-				</p>
-			 </div>
-		  </div><!-- / producto -->
-
-
-		</div> <!-- / owl -->
-
-			<div class="customNavigation">
-			  <a class="btn prev2  text-hide glyph-icon flaticon-siguiente"></a>
-			  <a class="btn next2 text-hide glyph-icon flaticon-siguiente"></a>
-			</div>
-		</div><!-- / home products2 -->
-
-
-	</div><!-- / main content -->
-
-	<!-- main content extra -->
-	<div class="col-md-12 main-content-extra products-home">
-				<!-- owl -->
-		<div id="owl-demo" class="owl003 owl-carousel owl-theme carousel-cesped-productos">
-
-
+		<!-- tercera linea -->
+<div class="col-sm-12">
+	<div class="clear separator"></div>
+</div>
+		<div class="col-sm-3">
 		<!-- producto -->
 		  <div class="item hvr-grow" itemscope itemtype="http://schema.org/Product">
 		  	<figure>
@@ -720,8 +466,11 @@
 					<span itemprop="priceCurrency" content="EUR">€/m<sup>2</sup></span>
 				</p>
 			 </div>
-		  </div><!-- / producto -->
-		  <!-- producto -->
+		  </div>
+		<!-- / producto -->
+		</div>
+		<div class="col-sm-3">
+		<!-- producto -->
 		  <div class="item hvr-grow" itemscope itemtype="http://schema.org/Product">
 		  	<figure>
 		  		<img itemprop="image" src="img/cesped-producto2.png" alt="cesped producto"/>
@@ -738,8 +487,11 @@
 					<span itemprop="priceCurrency" content="EUR">€/m<sup>2</sup></span>
 				</p>
 			 </div>
-		  </div><!-- / producto -->
-		  <!-- producto -->
+		  </div>
+		<!-- / producto -->
+		</div>
+		<div class="col-sm-3">
+		<!-- producto -->
 		  <div class="item hvr-grow" itemscope itemtype="http://schema.org/Product">
 		  	<figure>
 		  		<img itemprop="image" src="img/cesped-producto2.png" alt="cesped producto"/>
@@ -756,8 +508,11 @@
 					<span itemprop="priceCurrency" content="EUR">€/m<sup>2</sup></span>
 				</p>
 			 </div>
-		  </div><!-- / producto -->
-		  <!-- producto -->
+		  </div>
+		<!-- / producto -->
+		</div>
+		<div class="col-sm-3">
+		<!-- producto -->
 		  <div class="item hvr-grow" itemscope itemtype="http://schema.org/Product">
 		  	<figure>
 		  		<img itemprop="image" src="img/cesped-producto2.png" alt="cesped producto"/>
@@ -774,8 +529,21 @@
 					<span itemprop="priceCurrency" content="EUR">€/m<sup>2</sup></span>
 				</p>
 			 </div>
-		  </div><!-- / producto -->
-		  <!-- producto -->
+		  </div>
+		<!-- / producto -->
+		</div>
+
+		<!-- cuarta línea -->
+<div class="col-sm-12">
+	<div class="clear separator"></div>
+</div>
+		<div class="col-sm-3">
+			<figure class="categoria-banner">
+		  		<img itemprop="image" src="img/banner-categoria-small.png" alt="imagen categoria"/>
+		  	</figure>
+		</div>
+		<div class="col-sm-3">
+		<!-- producto -->
 		  <div class="item hvr-grow" itemscope itemtype="http://schema.org/Product">
 		  	<figure>
 		  		<img itemprop="image" src="img/cesped-producto2.png" alt="cesped producto"/>
@@ -792,8 +560,11 @@
 					<span itemprop="priceCurrency" content="EUR">€/m<sup>2</sup></span>
 				</p>
 			 </div>
-		  </div><!-- / producto -->
-		  <!-- producto -->
+		  </div>
+		<!-- / producto -->
+		</div>
+		<div class="col-sm-3">
+		<!-- producto -->
 		  <div class="item hvr-grow" itemscope itemtype="http://schema.org/Product">
 		  	<figure>
 		  		<img itemprop="image" src="img/cesped-producto2.png" alt="cesped producto"/>
@@ -810,8 +581,11 @@
 					<span itemprop="priceCurrency" content="EUR">€/m<sup>2</sup></span>
 				</p>
 			 </div>
-		  </div><!-- / producto -->
-		  <!-- producto -->
+		  </div>
+		<!-- / producto -->
+		</div>
+		<div class="col-sm-3">
+		<!-- producto -->
 		  <div class="item hvr-grow" itemscope itemtype="http://schema.org/Product">
 		  	<figure>
 		  		<img itemprop="image" src="img/cesped-producto2.png" alt="cesped producto"/>
@@ -828,23 +602,40 @@
 					<span itemprop="priceCurrency" content="EUR">€/m<sup>2</sup></span>
 				</p>
 			 </div>
-		  </div><!-- / producto -->
-
-
-		</div> <!-- / owl -->
-
-			<div class="customNavigation">
-			  <a class="btn prev3  text-hide glyph-icon flaticon-siguiente"></a>
-			  <a class="btn next3 text-hide glyph-icon flaticon-siguiente"></a>
-			</div>
-	</div><!-- / main content extra -->
+		  </div>
+		<!-- / producto -->
+		</div>
+	</div><!-- /main content -->
 
 
 
-</section><!-- /main section -->
+
+</section> <!-- / main section -->
 
 
+		<!-- clientes -->
 		<!-- aside -->
+		<aside class="asidecesped">
+			<section class="row clientessection clientessection__min">
+				<div class="col-md-12 clienteswrap">
+					<div class="clientesborder">
+						<h2 class="h2clientes subh2clientes">
+							Las mejores empresas confían en nosotros
+						</h2>
+						<div class="imagenes-clientes">
+							<figure class="imagenes-clientes-figure hvr-hang"><img src="img/cliente1.png" alt="cliente 1"></figure>
+							<figure class="imagenes-clientes-figure hvr-hang"><img src="img/cliente2.png" alt="cliente 1"></figure>
+							<figure class="imagenes-clientes-figure hvr-hang"><img src="img/cliente3.png" alt="cliente 1"></figure>
+							<figure class="imagenes-clientes-figure hvr-hang"><img src="img/cliente4.png" alt="cliente 1"></figure>
+							<figure class="imagenes-clientes-figure hvr-hang"><img src="img/cliente5.png" alt="cliente 1"></figure>
+							<figure class="imagenes-clientes-figure hvr-hang"><img src="img/cliente6.png" alt="cliente 1"></figure>
+						</div>
+					</div>
+				</div>
+			</section><!-- /clientes -->
+		</aside><!-- /aside -->
+		<!-- /clientes -->
+	<!-- aside -->
 		<aside class="asidecasos">
 			<section class="row casossection"><!-- casos de uso -->
 				<div class="col-md-4 casoswrap">
@@ -873,71 +664,6 @@
 				</div>
 			</section> <!-- / casos de uso  -->
 		</aside><!-- / aside -->
-
-		<!-- aside -->
-		<aside class="asidecesped">
-			<section class="row clientessection"><!-- clientes -->
-				<div class="col-md-12 clienteswrap">
-					<div class="clientesborder">
-						<h2 class="h2clientes">Las mejores empresas confían en nosotros
-							<span class="subh2clientes">Referencias, Clientes e Instalaciones de Todo Césped Artificial</span>
-						</h2>
-						<p class="pclientes">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit</p>
-						<div class="imagenes-clientes">
-							<figure class="imagenes-clientes-figure hvr-hang"><img src="img/cliente1.png" alt="cliente 1"></figure>
-							<figure class="imagenes-clientes-figure hvr-hang"><img src="img/cliente2.png" alt="cliente 1"></figure>
-							<figure class="imagenes-clientes-figure hvr-hang"><img src="img/cliente3.png" alt="cliente 1"></figure>
-							<figure class="imagenes-clientes-figure hvr-hang"><img src="img/cliente4.png" alt="cliente 1"></figure>
-							<figure class="imagenes-clientes-figure hvr-hang"><img src="img/cliente5.png" alt="cliente 1"></figure>
-							<figure class="imagenes-clientes-figure hvr-hang"><img src="img/cliente6.png" alt="cliente 1"></figure>
-						</div>
-					</div>
-				</div>
-			</section><!-- /clientes -->
-		</aside><!-- /aside -->
-
-		<!-- aside -->
-		<aside class="asidecesped">
-
-			<section class="row blogsection"><!-- blog -->
-				<h2 class="h2"><span class="square-green"></span>NOTICIAS DESTACADAS CÉSPED ARTIFICIAL E INSTALACIONES <a class="gotolink" href="#">VER TODAS ➝</a></h2>
-				<div class="wrpaflex">
-					<article class="col-md-4 blogarticle hvr-grow">
-						<div>
-							<div class="imgblogdestacada blog1">
-								<span class="fechablog">18 SEP</span>
-							</div>
-							<h3 class="h3resumen">Proin gravida nibh vel velit auc tor aliquet. Aenevan sollicitudin lorem quis bibendum auctor, nisi elit </h3>
-							<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-							<div class="degradado-blog"></div>
-						</div>
-					</article>
-					<article class="col-md-4 blogarticle hvr-grow">
-						<div>
-							<div class="imgblogdestacada blog2">
-								<span class="fechablog">23 OCT</span>
-							</div>
-							<h3 class="h3resumen">Proin udin, lorem quis nec sgittis sem nibh id elit</h3>
-							<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-							<div class="degradado-blog"></div>
-						</div>
-					</article>
-					<article class="col-md-4 blogarticle hvr-grow">
-						<div>
-							<div class="imgblogdestacada blog3">
-								<span class="fechablog">31 MAY</span>
-							</div>
-							<h3 class="h3resumen">Proin udin, lorem quis nec sgittis sem nibh id elit</h3>
-							<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-							<div class="degradado-blog"></div>
-						</div>
-					</article>
-				</div>
-			</section><!-- / blog -->
-
-		</aside><!-- /aside -->
-
-
 
 
 <!-- - - - - - - - - - - - - -

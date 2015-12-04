@@ -41,9 +41,24 @@
 				.imagenes-clientes-figure:last-child
 					margin-right 0
 				.imagenes-clientes-figure img
+					opacity .5
+					transition all 1s ease
 					max-width 7em
 					hight auto
 					overflow hidden
+					filter: gray; /* IE6-9 */
+					-webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+					-moz-filter: grayscale(100%);
+					-ms-filter: grayscale(100%);
+					-o-filter: grayscale(100%);
+					filter: grayscale(100%);
+				.imagenes-clientes-figure:hover img
+					opacity 1
+					-webkit-filter: grayscale(0); /* Google Chrome, Safari 6+ & Opera 15+ */
+					-moz-filter: grayscale(0);
+					-ms-filter: grayscale(0);
+					-o-filter: grayscale(0);
+					filter: grayscale(0);
 
 
 

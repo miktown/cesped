@@ -1,4 +1,49 @@
 // grid de categorías
+.main-content-single
+	.h1
+		font-size 1.5em
+		font-weight 400
+		color grisOscuro
+	.main-product-img
+		overflow hidden
+		heigh auto
+		width 100%
+		box-shadow 0 1px 2px grisOscuro
+		transition all 1s ease
+		.main-imagen-img
+			transition all 1s ease
+			overflow hidden
+			width 100%
+			vertical-align middle
+	.mini-product-img
+		float left
+		overflow hidden
+		heigh auto
+		width 80px
+		margin 1em .5em
+		cursor pointer
+		.min-imagen-img
+			overflow hidden
+			width 100%
+	.mini-product-img:first-child
+		margin-left 0
+	#helperVerticalAlign
+		content:""
+		display: inline-block
+		height: 100%
+		vertical-align: middle
+	.metadatos
+		.h2metadata
+			font-size 1.3em
+			color verdecesped
+			font-weight 300
+			margin-bottom 1em
+		p
+			font-size .8em
+			font-weight 300
+			color grisClaroOscurecido
+			strong
+				color grisClaroOscurecido
 .asideproduct
 	margin-top 2em
 	margin-bottom 3em
@@ -13,6 +58,7 @@
 			color grisOscuro
 			margin-top 0
 			margin-bottom 1.5em
+			text-align left!important
 		.categorias-grid
 			font-size .7em
 			figure

@@ -1,5 +1,52 @@
 // grid de categorías
 .main-content-single
+	.tabla-de-descuentos
+		margin-top 3em
+		border 1px solid grisClaro
+		p
+			background white
+			color grisClaro
+			margin-top -.7em
+			padding 0 .5em
+			span
+				color rosaDescuento
+		.cabecera
+			margin-top 1em
+			font-size .8em
+			ul
+				list-style none
+				text-align center
+				margin 0
+				padding 0
+				li
+					margin-bottom 1.5em
+			.rosita
+				color rosaDescuento
+		.cabecera.cabecera-girada ul li:first-child
+			background rosaDescuento
+			color white
+			transform: rotate(-7deg)
+			padding .5em .5em
+			margin-top -1em
+		.cabecera.cabecera-girada
+			color rosaDescuento
+
+	.free-transport
+		color verdecesped
+		font-weight 300
+	.aprox-transport
+		padding-top 1.5em
+		font-weight 300
+		padding-left 2em
+		color grisClaroOscurecido
+	.aprox-transport::before
+		position: absolute;
+		margin-right: .5em;
+		margin-left: 0;
+		padding-left: 0;
+		font-size: 1.5em;
+		margin-top: -.2em;
+		margin-left: -1.3em;
 	.configurador-compra
 		background grisClaroPlus
 		border 1px solid grisClaro

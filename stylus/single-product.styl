@@ -1,5 +1,26 @@
 // grid de categorías
 .main-content-single
+	.pedir-muestras
+		margin-top 1em
+		border 3px solid grisClaro
+		color grisClaro
+		text-transform uppercase
+		font-weight 300
+		display block
+		text-decoration none
+		padding 1em 0 1em 1.5em
+		font-size 1.4em
+		span
+			font-weight 400
+			color grisClaroOscurecido
+	.pedir-muestras::before
+		font-size 2em
+		margin-right .5em
+		margin-left -1.2em
+		padding-left 0
+		position absolute
+		margin-top -.3em
+		color verdecesped
 	.tabla-de-descuentos
 		margin-top 3em
 		border 1px solid grisClaro
@@ -48,24 +69,40 @@
 		margin-top: -.2em;
 		margin-left: -1.3em;
 	.configurador-compra
-		background grisClaroPlus
-		border 1px solid grisClaro
+		background grisClaroPlusPlus
+		border 1px solid grisClaroPlus
+		padding-bottom 1.5em
+		color grisClaroOscurecido
+		margin-top 1.5em
+		input
+			border-radius 0
+			text-align center
+			max-width 11em
+			margin 0 2em
+		label
+			font-weight 300
+		.text-sub-input
+			margin-top 1em
+			color grisClaro
+			font-size .9em
 		.h2
 			width 100%
 			margin 0
 			padding .5em 0
-			background grisClaro
+			background grisClaroPlus
 			color grisClaroOscurecido
 			font-size 1em
 			font-weight 500
 			text-align center
 			margin-bottom 1em
 		p
-			border-bottom 1px solid grisClaro
+			border-bottom 1px solid grisClaroPlus
 			padding-bottom 1em
 			margin-bottom 1em
 		.carrito-total
+			padding .5em
 			.precio-txt-total
+				line-height: 3.3em;
 				color grisClaroOscurecido
 				text-align left
 			.precio-total
@@ -73,13 +110,17 @@
 				font-weight 700
 				font-size 2.2em
 				text-align right
+				display block
 			.moneda-total
 				color verdecesped
 				font-weight 300
-				font-size 1em
-				padding 0 .3em
-				text-align right
+				font-size .5em
+				padding 0
+				margin 0
+				text-align left
 			.impuestos-total
+				display block
+				clear both
 				padding-left .5em
 				color grisClaroOscurecido
 				font-size .8em
@@ -95,7 +136,6 @@
 		box-shadow 0 2px 0 verdeOscuro
 	.bton-total::before
 		margin-right 1em
-
 	.producto-precio
 		padding-top 1em
 		.precio

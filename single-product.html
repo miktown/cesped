@@ -323,25 +323,31 @@
 				<form class="form-inline text-center">
 				  <div class="form-group">
 				    <label for="exampleInputName2">Cantidad</label>
-				    <input type="number" min="1" class="form-control" placeholder="5">
+				    <input id="exampleInputName2" ype="number" min="1" class="form-control" placeholder="5">
 				    <label for="exampleInputName2">m<sup>2</sup></label>
 				  </div>
 				</form>
-				<p class="text-center">el m<sup>2</sup> te sale a 12,30€ iva incluido</p>
+				<p class="text-center text-sub-input">el m<sup>2</sup> te sale a 12,30€ iva incluido</p>
 				<div class="carrito-total">
-					<span class="precio-txt-total">Total</span>
-					<span class="precio-total">182,20</span>
-					<span class="moneda-total">€/m<sup>2</sup></span>
-					<span class="impuestos-total">IVA INCLUIDO</span>
+					<div class="col-sm-4 text-left">
+						<span class="precio-txt-total">Total</span>
+					</div>
+					<div class="col-sm-8 text right">
+						<span class="precio-total">
+							182,20 <span class="moneda-total">€/m<sup>2</sup></span>
+						</span>
+
+						<span class="impuestos-total">IVA incluido</span>
+					</div>
 				</div>
 			</div>
 			<button class="bton-total glyph-icon flaticon-cesta hvr-icon-drop">AÑADIR A LA CESTA</button>
 			<p class="aprox-transport glyph-icon flaticon-camioneta2 text-center">15€ aproximado (según destino)</p>
-			<p class="free-transport glyph-icon text-center">a partir de 500€ transporte gratuito</p>
+			<p class="free-transport text-center">a partir de 500€ transporte gratuito</p>
 		</div>
 
 		<!-- metadata producto -->
-		<div class="col-sm-8 metadatos">
+		<div class="col-sm-8 metadatos nopl">
 			<div class="col-sm-12">
 				<h2 class="h2metadata">Especificaciones técnicas del Césped Artificial</h2>
 			</div>
@@ -411,6 +417,7 @@
 
 
 		<div class="col-sm-4">
+
 			<div class="col-sm-12 tabla-de-descuentos text-center">
 				<p>¿Quieres comprarlo por <span>7,45</span> €/m<sup>2</sup>?</p>
 
@@ -443,6 +450,10 @@
 				</div>
 
 			</div>
+			<div class="clear"></div>
+<!-- pide muestras gratis -->
+			<a href="#" class="pedir-muestras glyph-icon flaticon-paquete text-center hvr-bounce-in">pide muestras <span>gratis</span></a>
+
 		</div>
 	</div>
 
@@ -454,11 +465,11 @@
 		<aside class="asideproduct row">
 
 			<!-- row1 -->
-			<div class="col-md-12 rowrealacionado">
+			<div class="col-md-12 rowrealacionado nopl">
 
 
 				<!-- complementos relacionados -->
-				<div class="col-md-8 categorias-grid text-center">
+				<div class="col-md-8 categorias-grid text-center nopl">
 					<div class="col-sm-12">
 						<h2 class="productos-relacionados">COMPLEMENTOS PARA TU INSTALACIÓN DE CÉSPED ARTIFICIAL</h2>
 					</div>

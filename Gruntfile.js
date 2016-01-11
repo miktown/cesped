@@ -103,8 +103,8 @@ module.exports = function(grunt){
 
   // tareas principales
 
-  grunt.registerTask('default',[ 'stylus', 'cssmin','open:dev','watch']);
-
+  //grunt.registerTask('default',[ 'stylus', 'cssmin','open:dev','watch']);
+  grunt.registerTask('default',[ 'stylus', 'cssmin','watch']);
   // grunt.task.registerTask('build', [ 'clean:pro', 'stylus' , 'browserify' , 'uglify' , 'copy:pro', 'replace:pro' ]);
   // grunt.task.registerTask('deploy', [ 'clean:pro', 'stylus' , 'browserify' , 'uglify' , 'copy:pro' , 'replace:pro' , 'sftp' , 'open:pro' ]);
 

@@ -1,4 +1,225 @@
 // grid de categorías
+.main-content-single
+	.pedir-muestras
+		margin-top 1em
+		border 3px solid grisClaro
+		color grisClaro
+		text-transform uppercase
+		font-weight 300
+		display block
+		text-decoration none
+		padding 1em 0 1em 1.5em
+		font-size 1.4em
+		span
+			font-weight 400
+			color grisClaroOscurecido
+	.pedir-muestras::before
+		font-size 2em
+		margin-right .5em
+		margin-left -1.2em
+		padding-left 0
+		position absolute
+		margin-top -.3em
+		color verdecesped
+	.tabla-de-descuentos
+		margin-top 3em
+		border 1px solid grisClaro
+		p
+			background white
+			color grisClaro
+			margin-top -.7em
+			padding 0 .5em
+			span
+				color rosaDescuento
+		.cabecera
+			margin-top 1em
+			font-size .8em
+			ul
+				list-style none
+				text-align center
+				margin 0
+				padding 0
+				li
+					margin-bottom 1.5em
+			.rosita
+				color rosaDescuento
+		.cabecera.cabecera-girada ul li:first-child
+			background rosaDescuento
+			color white
+			transform: rotate(-7deg)
+			padding .5em .5em
+			margin-top -1em
+		.cabecera.cabecera-girada
+			color rosaDescuento
+
+	.free-transport
+		color verdecesped
+		font-weight 300
+	.aprox-transport
+		padding-top 1.5em
+		font-weight 300
+		padding-left 2em
+		color grisClaroOscurecido
+	.aprox-transport::before
+		position: absolute;
+		margin-right: .5em;
+		margin-left: 0;
+		padding-left: 0;
+		font-size: 1.5em;
+		margin-top: -.2em;
+		margin-left: -1.3em;
+	.configurador-compra
+		background grisClaroPlusPlus
+		border 1px solid grisClaroPlus
+		padding-bottom 1.5em
+		color grisClaroOscurecido
+		margin-top 1.5em
+		input
+			border-radius 0
+			text-align center
+			max-width 11em
+			margin 0 2em
+		label
+			font-weight 300
+		.text-sub-input
+			margin-top 1em
+			color grisClaro
+			font-size .9em
+		.h2
+			width 100%
+			margin 0
+			padding .5em 0
+			background grisClaroPlus
+			color grisClaroOscurecido
+			font-size 1em
+			font-weight 500
+			text-align center
+			margin-bottom 1em
+		p
+			border-bottom 1px solid grisClaroPlus
+			padding-bottom 1em
+			margin-bottom 1em
+		.carrito-total
+			padding .5em
+			.precio-txt-total
+				line-height: 3.3em;
+				color grisClaroOscurecido
+				text-align left
+			.precio-total
+				color verdecesped
+				font-weight 700
+				font-size 2.2em
+				text-align right
+				display block
+			.moneda-total
+				color verdecesped
+				font-weight 300
+				font-size .5em
+				padding 0
+				margin 0
+				text-align left
+			.impuestos-total
+				display block
+				clear both
+				padding-left .5em
+				color grisClaroOscurecido
+				font-size .8em
+				text-align right
+	.bton-total
+		width 100%
+		padding 1em 0 1em 2em
+		background verdecesped
+		color white
+		margin-top 1em
+		outline 0
+		border none
+		box-shadow 0 2px 0 verdeOscuro
+	.bton-total::before
+		margin-right 1em
+	.producto-precio
+		padding-top 1em
+		.precio
+			color verdecesped
+			font-weight 700
+			font-size 2.2em
+		.moneda
+			color verdecesped
+			font-weight 300
+			font-size 1em
+			padding 0 .3em
+		.impuestos
+			padding-left .5em
+			color grisClaroOscurecido
+			font-size .8em
+	.producto-altura
+		.altura-cesped
+			color grisOscuro
+			font-size .9em
+			font-weight 300
+		.altura-cesped::before
+			padding-left 0
+			margin-left 0
+			padding-right .5em
+			font-size .8em
+		.stockage
+			color grisOscuro
+			padding-left 1em
+			font-size .9em
+			font-weight 300
+		.stockage::before
+			padding-left 0
+			margin-left 0
+			padding-right .5em
+			font-size 1.1em
+	.descripcion-producto
+		font-size .9em
+		font-weight 300
+		color grisClaroOscurecido
+		padding-top 2em
+	.h1
+		font-size 1.5em
+		font-weight 400
+		color grisOscuro
+	.main-product-img
+		overflow hidden
+		heigh auto
+		width 100%
+		box-shadow 0 1px 2px grisOscuro
+		transition all 1s ease
+		.main-imagen-img
+			transition all 1s ease
+			overflow hidden
+			width 100%
+			vertical-align middle
+	.mini-product-img
+		float left
+		overflow hidden
+		heigh auto
+		width 80px
+		margin 1em .5em
+		cursor pointer
+		.min-imagen-img
+			overflow hidden
+			width 100%
+	.mini-product-img:first-child
+		margin-left 0
+	#helperVerticalAlign
+		content:""
+		display: inline-block
+		height: 100%
+		vertical-align: middle
+	.metadatos
+		.h2metadata
+			font-size 1.3em
+			color verdecesped
+			font-weight 300
+			margin-bottom 1em
+		p
+			font-size .8em
+			font-weight 300
+			color grisClaroOscurecido
+			strong
+				color grisClaroOscurecido
 .asideproduct
 	margin-top 2em
 	margin-bottom 3em
@@ -13,6 +234,7 @@
 			color grisOscuro
 			margin-top 0
 			margin-bottom 1.5em
+			text-align left!important
 		.categorias-grid
 			font-size .7em
 			figure
